@@ -1,2 +1,2 @@
 # Leetcode
-prepare for olp and 
+prepare for olp and icpc
