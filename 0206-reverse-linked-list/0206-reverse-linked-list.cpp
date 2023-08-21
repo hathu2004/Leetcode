@@ -28,9 +28,10 @@ public:
         ListNode *rev=NULL;
         while(head!=NULL)
         {
-        ListNode *forward=head->next;
-        head->next=NULL;
+        
+        //head->next=NULL;
         pushfront(rev, head->val);
+        ListNode *forward=head->next;
         head=forward;
         }
         return rev;
