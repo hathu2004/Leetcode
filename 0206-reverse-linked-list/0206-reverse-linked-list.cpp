@@ -23,16 +23,18 @@ public:
         newNode->next=head;
         head=newNode;
     }
+    // void popfront(ListNode *&head,int x)
+    // {
+    //     if(head==Null){return;}
+
+    // }
     ListNode* reverseList(ListNode* head) 
     {
         ListNode *rev=NULL;
         while(head!=NULL)
         {
-        
-        //head->next=NULL;
         pushfront(rev, head->val);
-        ListNode *forward=head->next;
-        head=forward;
+        head=head->next;
         }
         return rev;
     }
