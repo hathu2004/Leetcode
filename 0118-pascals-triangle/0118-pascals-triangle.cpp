@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<vector<int>> generate(int numRows) 
     {
-        int dp[50][50];
+        int dp[30][30];
         for(int i=0;i<numRows;i++)
         {
             dp[i][0]=1;
